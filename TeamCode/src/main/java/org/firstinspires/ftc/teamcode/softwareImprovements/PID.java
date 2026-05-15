@@ -3,9 +3,9 @@ package org.firstinspires.ftc.teamcode.softwareImprovements;
 
 
 public class PID {
-    private double proportional;
-    private double derivative;
-    private double integral;
+    private double proportional = 0.0;
+    private double derivative = 0.0;
+    private double integral = 0.0;
     private double error;
     private double lastError;
     private double integralSum;
