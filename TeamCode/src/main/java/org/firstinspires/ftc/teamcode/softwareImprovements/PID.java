@@ -12,9 +12,9 @@ public class PID {
     private double out;
 
     public void PIDControl(double kP, double kI, double kD){
-        this.proportional = error * kP;
-        this.integral += error * kI;
-        this.derivative = (error - derivative) * kD;
+        this.proportional = kP;
+        this.integral += kI;
+        this.derivative = kD;
     }
 
     public double calculate(double time, double current, double target){
